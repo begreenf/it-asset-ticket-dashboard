@@ -1,0 +1,81 @@
+import type { Ticket, Asset } from '../types'
+
+export const sampleTickets: Ticket[] = [
+  {
+        id: 'TCK-1001',
+        title: 'Cannot connect to VPN from home network',
+        requester: 'Maria Santos',
+        category: 'Network',
+        priority: 'High',
+        status: 'In Progress',
+        createdAt: '2026-07-28',
+        notes: 'Reinstalled client, waiting on user to confirm.',
+  },
+  {
+        id: 'TCK-1002',
+        title: 'New laptop request for onboarding',
+        requester: 'Jonathan Reyes',
+        category: 'Hardware',
+        priority: 'Medium',
+        status: 'Open',
+        createdAt: '2026-07-29',
+  },
+  {
+        id: 'TCK-1003',
+        title: 'Outlook not syncing shared calendar',
+        requester: 'Ana Julia Perez',
+        category: 'Software',
+        priority: 'Low',
+        status: 'Open',
+        createdAt: '2026-07-30',
+  },
+  {
+        id: 'TCK-1004',
+        title: 'Access request: Finance shared drive',
+        requester: 'Carlos Divertie',
+        category: 'Access',
+        priority: 'Medium',
+        status: 'Resolved',
+        createdAt: '2026-07-25',
+        notes: 'Approved by manager, group membership updated.',
+  },
+  ]
+
+export const sampleAssets: Asset[] = [
+  {
+        id: 'AST-2001',
+        name: 'Dell Latitude 5440',
+        type: 'Laptop',
+        assignedTo: 'Maria Santos',
+        status: 'In Use',
+        purchaseDate: '2024-03-12',
+        serialNumber: 'DL5440-8817',
+  },
+  {
+        id: 'AST-2002',
+        name: 'HP EliteDesk 800',
+        type: 'Desktop',
+        assignedTo: 'Front Desk',
+        status: 'In Use',
+        purchaseDate: '2022-11-02',
+        serialNumber: 'HPE800-2291',
+  },
+  {
+        id: 'AST-2003',
+        name: 'iPhone 13',
+        type: 'Phone',
+        assignedTo: 'Unassigned',
+        status: 'In Storage',
+        purchaseDate: '2023-06-19',
+        serialNumber: 'IP13-4471',
+  },
+  {
+        id: 'AST-2004',
+        name: 'Dell PowerEdge R440',
+        type: 'Server',
+        assignedTo: 'IT Department',
+        status: 'In Use',
+        purchaseDate: '2021-01-15',
+        serialNumber: 'PE440-0092',
+  },
+  ]
